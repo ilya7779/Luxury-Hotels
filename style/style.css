@@ -3,9 +3,9 @@
 }
 
 ._container {
-    max-width: 944px;
+    /* max-width: 1500px; */
     margin: 0 auto;
-    padding: 0 54px;
+    padding: 0 210px;
 }
 
 .header {
@@ -55,11 +55,17 @@
 }
 
 .header__link {
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
 }
 
+.header__link:active {
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+}
+
 .header__link:not(last-child) {
-    padding-right: 90px;
+    margin-right: 90px;
 }
 
 .welcome-to-hotels {
@@ -68,6 +74,74 @@
     justify-content: end;
     height: 100vh;
 
+    line-height: 1.2;
+    color: #fff;
     background: url("../img/main/welcome-to-hotels/welcome-to-hotels.png") 0 0/100% 100% no-repeat;
 }
 
+.welcome-to-hotels__container {
+    padding: 0 210px;
+}
+
+.welcome-to-hotels__description {
+    max-width: 700px;
+}
+
+.welcome-to-hotels__title span {
+    display: block;
+}
+
+.welcome-to-hotels__welcome-to {
+    font-family: 'Montserrat';
+    font-size: 50px;
+}
+.welcome-to-hotels__luxury {
+    font-family: 'Adobe Garamond Pro';
+    font-size: 154px;
+    line-height: 1;
+    font-weight: bold;
+    letter-spacing: 0.07em;
+}
+.welcome-to-hotels__hotels{
+    font-family: 'Adobe Garamond Pro';
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 0.4em;
+}
+.welcome-to-hotels__subtitle {
+    font-family: 'Montserrat';
+    font-size: 25px;
+    letter-spacing: 0.1em;
+}
+.welcome-to-hotels__button {
+    display: block;
+    width: 268px;
+    height: 78px;
+    margin: 80px auto;
+
+    background-color: #E0B973;
+    border-radius: 11px;
+}
+.welcome-to-hotels__book-now {
+    display: inline-block;
+    padding-left: 15px;
+
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-weight: 700; 
+    color: #fff;
+}
+.welcome-to-hotels__scroll {
+    margin: 15px auto;
+
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 25px;
+    font-weight: 700;
+}
+.welcome-to-hotels__arrow-to-down {
+    display: block;
+    margin: 0 auto 38px;
+
+    text-align: center;
+}
