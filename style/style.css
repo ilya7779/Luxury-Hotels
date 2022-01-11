@@ -145,3 +145,110 @@
 
     text-align: center;
 }
+
+@media (max-height: 900px), (max-width: 991px) {
+    .header__logo {
+        width: 200px;
+        height: 100px;
+        padding-top: 30px;
+
+        font-size: 30px;
+        border-radius: 0 0 31px 31px;
+    }
+    .welcome-to-hotels__welcome-to {
+        font-size: 26px;
+    }
+    .welcome-to-hotels__luxury {
+        font-size: 48px;
+    }
+    .welcome-to-hotels__hotels {
+        font-size: 24px;
+    }
+    .welcome-to-hotels__container {
+        padding: 0 110px;
+    }
+    .welcome-to-hotels__subtitle {
+        font-size: 22px;
+    }
+    .welcome-to-hotels__button {
+        width: 155px;
+        height: 45px;
+        margin: 50px auto;
+    }    
+    .welcome-to-hotels__button img {
+        height: 22px;
+    }
+    .welcome-to-hotels__book-now {
+        padding: 5;
+
+        font-size: 14px;
+    }
+    .welcome-to-hotels__scroll {
+        margin: 20px auto;
+        font-size: 22px;
+    }  
+    .welcome-to-hotels__arrow-to-down {
+        height: 35px;
+        margin: 20 auto;
+    }  
+}
+@media (max-height: 550px) {
+    .header__logo {
+        width: 150px;
+        height: 78px;
+        padding-top: 20px;
+
+        font-size: 25px;
+        border-radius: 0 0 31px 31px;
+    }
+    .welcome-to-hotels__welcome-to {
+        font-size: 18px;
+    }
+    .welcome-to-hotels__luxury {
+        font-size: 20px;
+    }
+    .welcome-to-hotels__hotels {
+        font-size: 20px;
+    }
+    .welcome-to-hotels__container {
+        padding: 0;
+        margin: 0 auto;
+    }
+    .welcome-to-hotels__subtitle {
+        font-size: 18px;
+    }
+    .welcome-to-hotels__button {
+        width: 116px;
+        height: 27px;
+        margin: 10px auto;
+    }    
+    .welcome-to-hotels__button img {
+        height: 15px;
+    }
+    .welcome-to-hotels__book-now {
+        padding: 0;
+
+        font-size: 9px;
+    }
+    .welcome-to-hotels__scroll {
+        margin: 5px auto;
+        font-size: 18px;
+    }  
+    .welcome-to-hotels__arrow-to-down {
+        height: 20px;
+        margin: 0 auto 10px;
+    }  
+}
+@media (max-width: 1199px) {
+    .header__link:not(last-child) {
+        margin-right: 50px;
+    }
+}
+@media (max-width: 991px) {
+    .header__link:not(last-child) {
+        margin-right: 50px;
+    }
+    .header__link {
+        font-size: 18px;
+    }
+}
