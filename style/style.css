@@ -103,7 +103,7 @@
     letter-spacing: 0.07em;
 }
 .welcome-to-hotels__hotels{
-    font-family: 'Adobe Garamond Pro';
+    font-family: "Adobe Garamond Pro";
     font-size: 60px;
     font-weight: bold;
     letter-spacing: 0.4em;
@@ -251,4 +251,99 @@
     .header__link {
         font-size: 18px;
     }
+}
+@media (max-width: 650px) {
+    .header__link {
+        font-size: 14px;
+    }
+    .header__link:not(last-child) {
+        margin-right: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .header__logo {
+        width: 90px;
+        height: 50px;
+        padding-top: 13px;
+
+        line-height: 0.8;
+        font-size: 16px;
+    }
+    .header__logo span {
+        font-size: 13px;
+        letter-spacing: 0.1em;
+    }
+    .header__list {
+        flex-wrap: wrap;
+        padding-left: 15px;
+    }
+    .header__list li:nth-child(2n+1) {
+        width: 40%;
+    }
+}
+.our-rooms {
+    font-family: 'Montserrat';
+}
+
+.our-rooms__heading {
+    margin: 83px 0;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.2;
+
+}
+
+.our-rooms__block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 150px;
+}
+.our-rooms__block:not(last-child) {
+    margin: 0 150px 69px;
+}
+
+.our-rooms__description-conteiner {
+    margin: 113px 0;
+    padding: 0 100px 0 50px;
+    border-left: 2px solid #000;
+}
+.our-rooms__title {
+    padding-bottom: 25px;
+
+    font-family: "Adobe Garamond Pro";
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+.our-rooms__text {
+    padding-bottom: 30px;
+
+    font-size: 25px;
+    line-height: 1.6;
+}
+._button {
+    color: #fff;
+    border-radius: 10px;
+    background-color: #E0B973;
+}
+.our-rooms__button {
+    width: 236px;
+    height: 63px;
+
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+}
+.our-rooms__photo {
+    position: relative;
+}
+
+.our-rooms__photo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
