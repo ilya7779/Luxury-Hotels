@@ -467,3 +467,208 @@
         border-left: 1px solid #000;
     }
 }
+.testimonials {
+    text-align: center;
+
+    font-family: 'Montserrat';
+    line-height: 1.2;
+}
+.testimonials__title {
+    font-family: "Adobe Garamond Pro";
+    font-size: 60px;
+    font-weight: 700;
+
+    margin: 115px auto 26px;
+}
+.testimonials__text {
+    font-size: 30px;
+
+    margin-bottom: 19px;
+}
+.testimonials__name {
+    margin-bottom: 23px;
+
+    font-size: 25px;
+}
+.testimonials__arrows {
+    margin-bottom: 163px; 
+}
+.testimonials__arrow {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    background-color: #E0B973;
+    border-radius: 5px;
+}
+.testimonials__arrow:first-child {
+    margin-right: 21px;
+}
+@media (max-width: 767px) {
+    .testimonials__title {
+        margin: 0px auto 15px;
+
+        font-size: 30px;
+    }
+    .testimonials__text {
+        padding: 0px 15px;
+
+        font-size: 20px;
+    }
+    .testimonials__name {
+        font-size: 20px;
+    }
+}
+@media (max-width: 480px) {
+    .testimonials__title {
+        margin: 0px auto 15px;
+        
+        font-size: 24px;
+    }
+    .testimonials__text {
+        padding: 0px 15px;
+
+        font-size: 14px;
+    }
+    .testimonials__name {
+        font-size: 15px;
+    }
+    .testimonials__arrow {
+        width: 30px;
+        height: 30px;
+
+        font-size: 23px;
+    }
+}
+.footer {
+    position: relative;
+    color: #fff;
+    background-color: #14274A;
+}
+.footer__triangle {
+    position: absolute;
+    top: -10%;
+    left: 48%;
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    transform: scale(2, 1) rotate(45deg);
+}
+.footer__container {
+    display: grid;
+    grid-template: 1fr / repeat(4, 1fr);
+    padding: 66px 185px;
+}
+.footer__contacts {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+
+
+    font-family: "Adobe Garamond Pro";
+    font-weight: 700;
+    line-height: 1.2;
+}
+.contacts__logo {
+    font-size: 25px;
+    letter-spacing: 0.15em;
+}
+
+.contacts__logo span {
+    display: block;
+    padding-left: 27px;
+    font-size: 9px;
+    letter-spacing: 0.6em;
+}
+
+.contacts__text {
+    display: grid;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    align-self: center;
+     
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;    
+}
+
+.contacts__points {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.contacts__points a {
+    align-self: center;
+    color: #fff;
+}
+
+.contacts__social-network {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2;
+}
+.contacts__social-network a {
+    color: #fff;
+}
+
+.contacts__social-network img {
+    padding: 5px 15px 0 0;
+}
+
+.contacts__form {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+}
+.contacts__form-title {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 1.2;
+}
+.contacts__form-input {
+    display: grid;
+    grid-row: 2 / 4;
+    height: 50px;
+
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 1.2;
+    color: #fff;
+    background-color: #14274A;
+    border: 2px solid #E0B973;
+    border-radius: 3px;
+    outline: none;
+}
+.contacts__form-input::placeholder {
+    padding-left: 10px;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+.contacts__form-button {
+    display: grid;
+    grid-row: 2 / 4;
+    height: 50px;
+    width: 80px;
+    align-items: center;
+
+    font-family: 'Montserrat';
+    font-size: 16px;
+    line-height: 1.2;
+    color: #14274A;
+    background-color: #E0B973;
+    border: 2px solid #E0B973;
+    border-radius: 3px;
+}
