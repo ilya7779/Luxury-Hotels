@@ -4,7 +4,11 @@
 
 ._container {
     margin: 0 auto;
-    padding: 0 210px;
+    padding: 82px 165px 113px;
+
+    text-align: center;
+
+    overflow: hidden;
 }
 
 .header {
@@ -57,7 +61,8 @@
     font-family: 'Montserrat', sans-serif;
     color: #fff;
 }
-.header__link-home {
+
+.header__link-facilities {
     font-weight: bold;
     border-bottom: 1px solid #fff;
 }
@@ -79,7 +84,7 @@
 
     line-height: 1.2;
     color: #fff;
-    background: url("../img/main/welcome-to-hotels/welcome-to-hotels-home.png") 0 0/100% 100% no-repeat;
+    background: url("../../img/main/welcome-to-hotels/welcome-to-hotels-facilities.png") 0 0/100% 100% no-repeat;
 }
 
 .welcome-to-hotels__container {
@@ -297,193 +302,144 @@
         width: 40%;
     }
 }
-.our-rooms {
-    font-family: 'Montserrat';
+
+
+.facilities {
+    max-width: 2000px;
+
+    line-height: 1.2;
     color: #14274A;
 }
 
-.our-rooms__heading {
-    margin: 83px 0;
-    text-align: center;
-    font-size: 36px;
-    line-height: 1.2;
-
-}
-
-.our-rooms__block {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 0 150px;
-}
-.our-rooms__block:not(last-child) {
-    margin: 0 150px 69px;
-}
-
-.our-rooms__description {
-    max-width: 1000px;
-}
-
-.our-rooms__description-conteiner {
-    margin: 113px 0;
-    padding: 0 100px 0 50px;
-    border-left: 2px solid #000;
-}
-.our-rooms__title {
-    padding-bottom: 25px;
+.facilities__title {
+    margin-bottom: 34px;
 
     font-family: "Adobe Garamond Pro";
     font-size: 60px;
     font-weight: 700;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.05em;   
 }
-.our-rooms__text {
-    padding-bottom: 30px;
 
+.facilities__text {
+    margin-bottom: 82px;
+
+    font-family: 'Montserrat';
     font-size: 25px;
-    line-height: 1.6;
 }
-._button {
-    color: #fff;
-    border-radius: 10px;
-    background-color: #E0B973;
-}
-.our-rooms__button {
-    width: 236px;
-    height: 63px;
-
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.05em;
-}
-.our-rooms__photo {
+.facilities__type {
     position: relative;
 }
 
-.our-rooms__photo img {
-    position: absolute;
-    top: 0;
-    left: 0;
+.facilities__type:not(:last-child) {
+    margin-bottom: 186px;
+}
+
+/* .facilities__type-photo {
+    position: relative;
+} */
+
+.facilities__type-photo img {
     width: 100%;
     height: 100%;
+
     object-fit: cover;
 }
 
-@media (max-width: 1199px) {
-    .our-rooms__block:not(last-child) {
-        margin: 0 50px 69px;
+.facilities__type-title {
+    position: absolute;
+    top: 94%;
+    left: 30%;
+
+    width: 40%;
+    height: 7%;
+    padding-top: 14px;
+
+    font-size: 48px;
+    font-weight: 700;
+
+    background-color: #fff;
+}
+
+
+@media (min-width: 3000) {
+    ._container {
+        padding: 82px 100px 113px;
     }
-    .our-rooms__heading {
-        font-size: 30px;
-    }
-    .our-rooms__title {
-        font-size: 45px;
-    }
-    .our-rooms__text {
-        font-size: 22px;
+    .facilities__type-title {
+        padding: 0;
+        font-size: 36px;
     }
 }
 @media (max-width: 991px) {
-    .our-rooms__block:not(last-child) {
-        margin: 0 50px 69px;
+    ._container {
+        padding: 82px 100px 113px;
     }
-    .our-rooms__description-conteiner {
-        margin: 80px 0;
-        padding: 0 60px 0 40px;
-    }
-    .our-rooms__heading {
-        margin: 55px 0;
-        font-size: 25px;
-    }
-    .our-rooms__title {
-        font-size: 31px;
-    }
-    .our-rooms__text {
-        font-size: 19px;
-        line-height: 1.4;
+    .facilities__type-title {
+        padding: 0;
+        font-size: 36px;
     }
 }
 @media (max-width: 767px) {
-    .our-rooms__block {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        margin: 0 150px;
+    .facilities__title {
+        font-size: 48px;
     }
-    .our-rooms__description {
-        order: 2;
+    .facilities__type-title {
+        font-size: 26px;
     }
-    .our-rooms__description-conteiner {
-        margin: 0;
+}
+@media (max-width: 650px) {
+    ._container {
+        padding: 40px 30px 70px;
     }
-    .our-rooms__title {
-        padding: 15px 0;
-    }
-    .our-rooms__text {
-        padding-bottom: 20px;
-    }
-    .our-rooms__button {
-        width: 150px;
-        height: 40px;
-        font-size: 14px;
-    }
-    .our-rooms__photo {
-        order: 1;
-    }
-    .our-rooms__photo img {
-        padding: 0 60px 0 40px;
+    .facilities__title {
+        margin-bottom: 14px;
 
-        border-left: 2px solid #000;
+        font-size: 32px;
+    }
+    .facilities__type-title {
+        font-size: 23px;
+    }
+    .facilities__type:not(:last-child) {
+        margin-bottom: 75px;
+    }
+    .facilities__text {
+        margin-bottom: 50px;
+        font-size: 16px;
     }
 }
 @media (max-width: 480px) {
-    .our-rooms__block {
-        grid-template-rows: 30% 1fr;
-        margin: 0 20px 20px;
+    ._container {
+        padding: 30px 20px 40px;
     }
-    .our-rooms__block:not(last-child) {
-        margin: 0 20px 100px;
+    .facilities__title {
+        margin-bottom: 8px;
+        font-size: 24px;
     }
-    .our-rooms__description-conteiner {
-        padding: 0 20px 0 20px;
-
-        border-left: 1px solid #000;
-    }
-    .our-rooms__heading {
-        margin: 15px 30px;
+    .facilities__text {
+        margin-bottom: 20px;
         font-size: 12px;
     }
-    .our-rooms__title {
-        font-size: 18px;
+    .facilities__type:not(:last-child) {
+        margin-bottom: 40px;
     }
-    .our-rooms__text {
-        font-size: 10px;
-        line-height: 1.4;
-    }
-    .our-rooms__button {
-        width: 60px;
-        height: 20px;
-        font-size: 9px;
-    }
-    .our-rooms__photo img {
-        padding: 0 100px 0 20px;
-
-        border-left: 1px solid #000;
+    .facilities__type-title {
+        font-size: 14px;
     }
 }
+
+
 .testimonials {
     text-align: center;
 
     font-family: 'Montserrat';
     line-height: 1.2;
-    color: #14274A;
 }
 .testimonials__title {
     font-family: "Adobe Garamond Pro";
     font-size: 60px;
     font-weight: 700;
 
-    margin: 115px auto 26px;
+    margin: 0 auto 26px;
 }
 .testimonials__text {
     font-size: 30px;
@@ -541,16 +497,17 @@
     .testimonials__name {
         font-size: 15px;
     }
-    .testimonials__arrows {
-        margin-bottom: 90px;
-    }
     .testimonials__arrow {
         width: 30px;
         height: 30px;
 
         font-size: 23px;
     }
+    .testimonials__arrows {
+        margin-bottom: 90px;
+    }
 }
+
 .footer {
     position: relative;
     color: #fff;
