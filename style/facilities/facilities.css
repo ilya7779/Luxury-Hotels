@@ -700,6 +700,11 @@
     }
 }
 @media (max-width: 650px) {
+    .footer__triangle {
+        position: absolute;
+        top: -5%;
+        left: 48%;
+    }
     .contacts__social-network {
         grid-template: repeat(3, 1fr) / 86px;
     }
